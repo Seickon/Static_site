@@ -22,7 +22,7 @@ def generate_page(from_path, template_path, dest_path, basepath):
     file.write(html)
     file.close()
 
-def generate_pages_recursive(dir_path_content, template_path, dest_dir_path, basepath):
+def generate_pages_recursive(dir_path_content, template_path, dest_dir_path, basepath = "/"):
     contets = os.listdir(dir_path_content)
     for dir in contets:
         content = os.path.join(dir_path_content, dir)
