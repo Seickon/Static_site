@@ -5,7 +5,7 @@ from generate_page import *
 import sys
 
 def main():
-    basepath = sys.argv
+    basepath = sys.argv[1]
     copy_dictonary()
     generate_pages_recursive(os.path.expanduser("content"), os.path.expanduser("template.html"), os.path.expanduser("docs"), basepath)
 
